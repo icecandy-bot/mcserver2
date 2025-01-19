@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laop.fun 生存伺服器</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/stylesheet-info.css">
+	<script src="https://use.fontawesome.com/30155533f0.js"></script>
+	<script type="text/javascript">
+		function mobile() {
+			var bars = document.getElementById("mnav");
+			if(bars.className === "mnav") {
+				bars.className += " responsive";
+			} else {
+				bars.className = "mnav";
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<ul class="nav-items" id="nav-items">
+				<a><li onclick="mobile()" class="icon fa fa-bars fa-2x"></li></a>
+				<a href="#main"><li class="h"> 
+					<div class="overlay"></div>
+					主頁
+				</li></a>
+				<a href="#announcement"><li class="h"> 
+					<div class="overlay"></div>
+					伺服器規則								
+				</li></a>
+				<div class="log"><img alt="MyServer Logo" class="logo" src="img/logo.png"></div>
+				<a href="#games"><li class="h">
+					<div class="overlay"></div>
+					遊玩教學
+				</li></a>
+				<a href="#contact"><li class="h">
+					<div class="overlay"></div>
+					聯絡我們
+				</li></a>
+			</ul>
+
+		</div>
+
+		<div class="hero" id="main">
+			<h1>歡迎來到 Laop.fun 生存伺服器</h1>
+			<p><h3>連線地址 : 
+				<span style="color: #1a28e4;">laop.fun</span>
+				遊戲版本 : 1.21.3 </h3></p>
+		</div>
+		
+		</div>
+	</header>
+	<div class="main">
+		<div id="description">
+			<div>
+				<i class="fa fa-rocket fa-4x"></i>
+				<span>
+					<h3>我們的歷史</h3>
+					<p>經過長久的開發與更新，目前已經有各種強大的插件!!!絕對不輸給模組，我們目前也有跟許多的直播主合作，希望未來能夠進一步擴展我們的社群，吸引更多的玩家加入</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-user fa-4x"></i>
+				<span>
+					<h3>我們的團隊</h3>
+					<p>Laop.fun 的工作人員友好、投入，隨時在線幫助一切順利運行。如有任何問題，請在<a href="https://discord.laop.fun/" target="_blank" style="color: blue; text-decoration: underline;">DC</a>聯絡我們。</p>
+					
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-server fa-4x"></i>
+				<span>
+					<h3>我們的伺服器</h3>
+					<p>我們經過了各種的討論最後決定用插件代替模組，以下是插件服的優點
+						1.安裝任何檔案即可遊玩，電腦性能較差者也可遊玩
+						2.更新頻率高，提供玩家不一樣的體驗
+						3.bug可自行修復
+						4.將由更多管理層人員共同開發，並自行開發插件
+						5.伺服器較不卡頓
+				</span>
+			</div>
+		</div>
+		<div id="games">
+			<h2>遊戲教學</h2>
+		
+			<div class="game e">
+				<div class="game-description">
+					<h3>🎈 公會/聯盟: 介紹 🎈</h3>
+					<p>為玩家提供身臨其境的角色扮演體驗。可以創造城鎮、管理土地所有權、建立聯盟以及策劃戰爭和背叛。</p>
+					
+					<h3>⚽ 指令介紹 ⚽</h3>
+					<ul class="command-list">
+						<li><code>/tan gui</code> - 開啟聯盟介面</li>
+						<li><code>/tan invite [玩家名稱]</code> - 邀請玩家加入聯盟</li>
+						<li><code>/tan pay [玩家名稱] [金額]</code> - 使用聯盟倉庫中的遊戲幣給予聯盟玩家錢</li>
+						<li><code>/tan claim</code> - 佔領/聲明此區塊至您的聯盟中</li>
+						<li><code>/tan map</code> - 顯示已佔領的地圖</li>
+						<li><code>/tan chat [global/alliance/town]</code> - 選擇聊天室區域</li>
+						<li><code>/tan setspawn</code> - 設置聯盟重生區</li>
+						<li><code>/tan spawn</code> - 傳送至您的聯盟出生點</li>
+					</ul>
+				</div>
+				<img alt="工會介紹" class="gimg a" src="img/公會介紹.png">
+			</div>
+		
+			<hr>
+		
+			<div class="game f">
+				<div class="game-description">
+					<h3>🎈 商城/經濟: 介紹 🎈</h3>
+					<p>此功能提供玩家使用商城可以方便購買及販售物品賺取遊戲幣。</p>
+		
+					<h3>⚽ 指令介紹 ⚽</h3>
+					<ul class="command-list">
+						<li><code>/shop</code> - 開啟商城介面</li>
+						<li><code>/sellgui</code> - 開啟販售介面，拖移要販售物品至商城介面後並關閉頁面即可完成販售</li>
+						<li><code>/sellall</code> - 販售物品欄內所有可販售物品（謹慎使用）</li>
+						<li><code>/sellall hand</code> - 出售你目前手中持有的物品堆</li>
+						<li><code>/pay [玩家名稱]</code> - 給予其他玩家遊戲幣</li>
+						<li><code>/bal</code> - 查看有多少遊戲幣</li>
+						<li><code>/baltop</code> - 查看伺服器玩家遊戲幣排行</li>
+					</ul>
+				</div>
+				<img alt="經濟介紹" class="gimg b" src="img/經濟介紹.png">
+			</div>
+		</div>
+		
+
+			<hr>
+
+			<div class="game g">
+				<div class="game-description">
+					<h3>🎈 傳送石碑: 介紹 🎈</h3>
+					<p>傳送石碑提供玩家使用石碑進行傳送，不再使用麻煩又複雜的指令。傳送石碑也可以與其他玩家共同使用。</p>
+					
+					<h3>🥤 合成方式 🥤</h3>				
+				</div>
+				<img alt="傳送石碑合成方式" class="gimg recipe-img" src="img/合成表.png"> 
+				<img alt="傳送石碑合成方式2" class="gimg c" src="img/合成表2.png">
+			</div>
+			
+
+			<hr>
+		</div>
+		<!--<div id="staff">
+			<div class="staff">
+				<h2>我們的團隊</h2>
+				<div class="staff-team">
+					<div>
+						<h3><a href="https://aayush.is-a.dev">OpAayu5h</a></h3>
+						<div class="owner">擁有者</div>
+						<img alt="MyServer Staff Member" src="img/aayush.png">
+					</div>
+
+					 <div>
+						<h3>Aayu5h</h3>
+						<div class="owner">擁有者</div>
+						<img alt="MyServer Staff Member" src="img/plej.png">
+					</div>
+
+					<div>
+						<h3>Aayu5h</h3>
+						<div class="manager">經理</div>
+						<img alt="MyServer Staff Member" src="img/yo.png">
+					</div>
+
+					<div>
+						<h3>Aayu5h</h3>
+						<div class="admin">管理員</div>
+						<img alt="MyServer Staff Member" src="img/yoo.png">
+					</div>
+
+					<div>
+						<h3>!function(a){var b={total:10,ofTop:0,ofLeft:0,on:"document.body",twinkle:.2,minPixel:1,maxPixel:2,color:"#fff",namespace:"jqueryFireFly",zIndex:Math.ceil(20*Math.random())-1,borderRadius:"50%",_paused:!1};a.firefly=function(c){if(a.firefly.settings=a.extend({},b,c),a.firefly.eleHeight=a(a.firefly.settings.on).height(),a.firefly.eleWidth=a(a.firefly.settings.on).width(),a(window).resize(function(){if("document.body"!==a.firefly.settings.on){var b=a(a.firefly.settings.on).offset();a.firefly.offsetTop=b.top,a.firefly.offsetLeft=b.left,a.firefly.eleHeight=a(a.firefly.settings.on).height(),a.firefly.eleWidth=a(a.firefly.settings.on).width()}else a.firefly.offsetTop=0,a.firefly.offsetLeft=0,a.firefly.eleHeight=a(document.body).height(),a.firefly.eleWidth=a(document.body).width()}),"document.body"!==a.firefly.settings.on){var d=a(a.firefly.settings.on).offset();a.firefly.offsetTop=d.top,a.firefly.offsetLeft=d.left,a.firefly.eleHeight=a(a.firefly.settings.on).height(),a.firefly.eleWidth=a(a.firefly.settings.on).width()}else a.firefly.offsetTop=0,a.firefly.offsetLeft=0,a.firefly.eleHeight=a(document.body).height(),a.firefly.eleWidth=a(document.body).width();for(i=0;i<a.firefly.settings.total;i++){var e=a.firefly.randomPixel(a.firefly.settings.minPixel,a.firefly.settings.maxPixel),f=a.firefly.create(e);a.firefly.fly(f)}return a.firefly.sparks=a(a.firefly.settings.on).children("."+a.firefly.settings.namespace),this},a.firefly.pause=function(b){a.firefly.settings._paused=!0,b&&a.each(a.firefly.sparks,function(b,c){a(c).stop(!0)})},a.firefly.resume=function(){a.firefly.settings._paused=!1,a.each(a.firefly.sparks,function(b,c){a.firefly.fly(c)})},a.firefly.create=function(b){return spark=a("<div>").hide(),spark.addClass(a.firefly.settings.namespace),a.firefly.settings._onSparkID++,"document.body"===a.firefly.settings.on?a(document.body).append(spark):a(a.firefly.settings.on).append(spark),spark.css({position:"absolute",width:b,height:b,"background-color":a.firefly.settings.color,"z-index":a.firefly.settings.zIndex,"border-radius":a.firefly.settings.borderRadius,top:a.firefly.offsetTop+a.firefly.random(a.firefly.eleHeight-50),left:a.firefly.offsetLeft+a.firefly.random(a.firefly.eleWidth-50),"pointer-events":"none"}).show()},a.firefly.fly=function(b){a(b).animate({top:a.firefly.offsetTop+a.firefly.random(a.firefly.eleHeight-50),left:a.firefly.offsetLeft+a.firefly.random(a.firefly.eleWidth-50),opacity:a.firefly.opacity(a.firefly.settings.twinkle)},{duration:2e3*(a.firefly.random(10)+5),done:function(){a.firefly.settings._paused||a.firefly.fly(b)}})},a.firefly.randomPixel=function(a,b){return Math.floor(Math.random()*(b-a+1)+a)},a.firefly.random=function(a){return Math.ceil(Math.random()*a)-1},a.firefly.opacity=function(a){return op=Math.random(),op<a?0:1}}(jQuery);
+Aayu5h</h3>
+						<div class="admin">管理員</div>
+						<img alt="MyServer Staff Member" src="img/sd.png">
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div id="announcement">
+			<div class="an-img">
+				<h2>伺服器規則</h2>
+				<div class="an-t">
+					<h3>📑 伺服器隱私條款</h3>
+					<p>
+						伺服器所有玩家資料不會提供、交換、出租或出售予第三者。<br>
+						前項但書之情形包括不限於:<br>
+						<ul>
+							<li>a. 經由您書面同意。</li>
+							<li>b. 應司法機構、政府機構的要求時。</li>
+							<li>c. 需保護本團隊、其使用者及公眾之權利、財產或個人安全時。</li>
+						</ul>
+						伺服器將蒐集玩家IP及登入資訊, 進入遊戲並且註冊成功即代表同意隱私條款。
+					</p>
+		
+					<h3>📃 伺服器服務條款</h3>
+					<p>
+						如因玩家、DDoS、主機商、颱風、地震、海嘯、洪水、停電、戰爭、國際海底電纜斷裂等不可抗力因素造成資料毀損, 伺服器方將不負全責。<br>
+						如因可歸責於伺服器方之事由導致資料毀損時, 伺服器方將在新伺服器開放後一個月內進行對玩家遊戲內物品補償, 除此之外伺服器方不負任何賠償責任。<br>
+						如玩家導致伺服器方名譽不佳, 伺服器方可終止對玩家遊戲內的所有權力。<br>
+						伺服器遊戲內金錢如有玩家與玩家之間貨幣交易, 伺服器方不負全責。<br>
+						玩家儲值購買本伺服器內產品, 購買後即無法退款, 請自行考量。<br>
+						如伺服器因不可抗力因素永久關閉伺服器, 伺服器方不負賠償購買產品責任。<br>
+						本伺服器可能包含恐怖、血腥等畫面, 如有心臟病、氣喘、高血壓、焦慮症、恐慌症、創傷後壓力症候群及其他身心健康問題玩家請斟酌遊玩。
+					</p>
+		
+					<h3>🔹 其他</h3>
+					<p>
+						伺服器方保留隨時修改本條款的權利，修改後將立即生效，伺服器方不負任何通知責任。<br>
+						用戶使用本服務所生之一切紛爭以臺灣新北地方法院為第一審管轄法院。<br>
+						另行公告之條款或相關規定亦均併入屬於本條款之一部分。<br><br>
+						喵！皮 — 2024/8/2 下午2:28
+					</p>
+		
+					<h3>🌿 伺服器基本規則</h3>
+					<ul>
+						<li>禁止使用任何輔助/第三方程式, 依防軟體/第三方程式系統為準。</li>
+						<li>請勿嘗試以任何形式導致伺服器崩潰。</li>
+						<li>請勿在聊天室中進行刷頻、洗版行為。</li>
+						<li>伺服器含有領地功能, 如玩家未設領地遭其他玩家破壞或偷竊, 伺服器概不負責。</li>
+						<li>如領地主人給予其他玩家/朋友領地內權限, 遭上述人破壞, 伺服器概不負責。</li>
+						<li>伺服器內含有遊戲幣功能, 如商店內金額有任何問題請盡速回報, 嚴禁利用商店內金額問題進行洗錢行為。</li>
+					</ul>
+		
+					<p>❗ 伺服器方有權以上方所有規則對玩家進行任何正當形式懲處, 進入遊戲即生效。<br>
+						⚠️ 伺服器方保留隨時修改本規則的權利，修改後將立即生效，伺服器方不負任何通知責任。</p>
+		
+					<h3>🔧 防範管理員濫權條例</h3>
+					<ul>
+						<li>禁止管理員使用飛行、使用第三方程式等方式隨意進入玩家住宅/領地附近影響玩家遊戲體驗。</li>
+						<li>管理員踢出/封禁任何玩家須註明正當理由。</li>
+					</ul>
+		
+					<p>❗ 伺服器方有權以上方所有規則對管理員進行任何正當形式懲處。<br>
+						⚠️ 伺服器方保留隨時修改本規則的權利，並保有最終解釋權。</p>
+				</div>
+			</div>
+		</div>
+		
+		 <div id="contact">
+			<h2>聯絡我們</h2>
+			<p>X - <a href="https://x.com/laop_fun">https://x.com/laop_fun</a></p>
+			<p>Discord - <a href="https://discord.laop.fun/">https://discord.laop.fun/</a></p>
+		</div> 
+	</div>
+	<footer>
+		
+</body>
+</html>
